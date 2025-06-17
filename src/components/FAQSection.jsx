@@ -39,8 +39,10 @@ const FAQSection = () => {
   return (
     <div className="min-h-screen p-8 w-full flex flex-col  bg-gradient-to-b from-sky-50 via-blue-100 to-white relative">
       {/* FAQ List */}
-      <div className="flex-grow overflow-y-auto">
-      <div className="w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-4xl mx-auto space-y-2">
+<h1 className="text-xl md:text-2xl font-bold text-center text-blue-900 mb-8">
+        FREQUENTLY ASKED QUESTIONS (FAQs)
+      </h1>      <div className="flex-grow overflow-y-auto">
+<div className="w-[100%] max-w-md sm:max-w-lg md:max-w-5xl lg:max-w-5xl xl:max-w-6xl mx-auto space-y-2">
         {faqs.map((faq, index) => (
           <div key={index} className="overflow-hidden rounded-lg">
             {/* Question Box */}
@@ -58,7 +60,7 @@ const FAQSection = () => {
                 <span className="text-xl font-medium mr-3">
                   {ACTIVE_INDEX === index ? '−' : '+'}
                 </span>
-                <h3 className="text-sm font-semibold">
+                <h3 className="text-xs sm:text-sm md:text-base font-semibold">
                   {faq.question}
                 </h3>
               </div>
@@ -72,7 +74,7 @@ const FAQSection = () => {
                   animate={{ opacity: 1, height: 'auto' }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.3 }}
-                  className="bg-purple-50 border-l-4 border-blue-900"
+                  className="bg-purple-200 border-l-4 border-blue-900"
                 >
                   <div className="p-5 text-gray-700">
                     {faq.answer}
@@ -88,20 +90,20 @@ const FAQSection = () => {
       {/* CTA Section */}
       <div className=" mt-10 text-center">
         <Link to="/register">
-          <button className="bg-blue-900 text-white text-3xl px-6 py-3 rounded-2xl font-bold cursor-pointer hover:bg-orange-600 transition">
+          <button className="bg-blue-900 text-white text-3xl px-6 py-3 rounded-2xl font-bold cursor-pointer">
             I WANT TO REGISTER NOW
           </button>
         </Link>
-        <div className="mt-4 text-2xl">
-          Offer Price: <span className="line-through">₹499</span> <span className="text-orange-500 font-bold">₹21</span>
+        <div className="mt-4 text-2xl mb-4">
+          Offer Price: <span className="line-through">₹499</span> <span className="text-blue-900 font-bold">₹21</span>
         </div>
       </div>
       </div>
 
       {/* Footer Links */}
-     <footer className="w-full mt-2 mb-4 py-6 pt-2 border-t border-gray-300 bg-gray-100 z-10 relative">
-  <div className="max-w-7xl mx-auto px-4">
-    <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-700 text-center">
+    <footer className="w-screen bg-gray-100 border-gray-300 py-2 relative left-1/2 right-1/2 -mx-[50vw] mb-8">
+  {/* <div className="max-w-7xl mx-auto "> */}
+    <div className="flex flex-wrap justify-center gap-2 text-sm text-gray-700 text-center">
       <Link to="/terms" className="hover:underline hover:text-blue-900">
         Terms of Service
       </Link>
@@ -122,7 +124,7 @@ const FAQSection = () => {
         Disclaimer
       </Link>
     </div>
-  </div>
+  {/* </div> */}
 </footer>
 
     </div>

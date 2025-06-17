@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import { Gift, CheckCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Testimonials from '@/components/Testimonials';
@@ -41,7 +43,7 @@ const Bonuses = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-800 to-blue-500 bg-clip-text text-transparent mb-4">
+          <h2 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-blue-800 to-blue-500 bg-clip-text text-transparent ">
             🎁 Free Bonuses Worth ₹2,100 for All Attendees
           </h2>
           <p className="text-gray-700 max-w-xl mx-auto font-medium text-lg">
@@ -58,7 +60,7 @@ const Bonuses = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="relative bg-blue-800 border border-blue-700 rounded-2xl p-6 shadow-xl hover:shadow-blue-600/30 hover:-translate-y-1 transition-all"
+              className="relative bg-blue-900 border border-blue-700 rounded-2xl p-6 shadow-xl hover:shadow-blue-600/30 hover:-translate-y-1 transition-all"
             >
               <div className="flex items-center gap-4 mb-4">
                 <div className="text-3xl">{bonus.icon}</div>
@@ -79,9 +81,13 @@ const Bonuses = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mt-16"
         >
+                    <Link to="/register">
+
           <button className="bg-gradient-to-r from-blue-500 to-blue-500 hover:from-blue-600 hover:to-indigo-700 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105">
             Grab Your Free Bonuses Now 🚀
           </button>
+                  </Link>
+
           <p className="text-sm text-white-400 mt-2">
             No catch. Just pure value! ✨
           </p>

@@ -1,6 +1,16 @@
-import React from "react";
+import React, {  useEffect } from "react";
+import FixedComponent from "../components/FixedComponent";
+import { useLayout } from '../context/LayoutContext';
 
 const TermsAndConditions = () => {
+  const { setShowFixedComponent } = useLayout();
+
+  
+  useEffect(() => {
+    setShowFixedComponent(false);
+    return () => setShowFixedComponent(true);
+  }, [setShowFixedComponent]);
+
   return (
     <div className="max-w-7xl mx-auto py-6 px-4 sm:px-8 lg:px-10">
       <h1 className="text-3xl font-bold text-gray-700 mb-2 font-legal" >Terms and Conditions</h1>
@@ -131,5 +141,6 @@ const TermsAndConditions = () => {
     </div>
   );
 };
+
 
 export default TermsAndConditions;

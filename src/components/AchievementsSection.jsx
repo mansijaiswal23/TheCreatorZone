@@ -91,7 +91,7 @@ const AchievementsSection = () => {
   initial={{ opacity: 0, y: 30 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 1, ease: 'easeOut' }}
-  className="text-red-600 text-base sm:text-lg md:text-xl font-medium mt-6 px-4 max-w-3xl mx-auto leading-relaxed tracking-wide text-center"
+  className="text-blue-900 text-base sm:text-lg md:text-xl font-medium mt-6 px-4 max-w-3xl mx-auto leading-relaxed tracking-wide text-center"
 >
   These are just a few results. We literally have 1000s of Case Studies and success stories of people building Social Media Brands.
 </motion.p>
@@ -103,7 +103,7 @@ const AchievementsSection = () => {
         </Link>
       </div>
       <div className="mt-4 text-2xl">
-            Offer Price: <span className="line-through">₹499</span> <span className="text-orange-500 font-bold">₹21</span>
+            Offer Price: <span className="line-through">₹499</span> <span className="text-blue-900 font-bold">₹21</span>
           </div>
 
   {/* Modal Popout */}

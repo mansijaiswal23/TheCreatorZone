@@ -1,4 +1,14 @@
+import React, {  useEffect } from "react";
+import { useLayout } from '../context/LayoutContext';
+
 function PaymentPage() {
+  const { setShowFixedComponent } = useLayout();
+    
+      
+      useEffect(() => {
+        setShowFixedComponent(false);
+        return () => setShowFixedComponent(true);
+      }, [setShowFixedComponent]);
   return (
     <div className="min-h-screen bg-white px-6 py-12 text-gray-900 font-sans">
       <div className="max-w-4xl mx-auto">

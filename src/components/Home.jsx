@@ -6,8 +6,7 @@ function Home() {
 
   return (
     <div>
-    <div className="text-center bg-cover bg-center bg-gray-100 min-h-screen"
-    style={{backgroundImage: "url('/cru.jpg')"}}>
+    <div className="text-center bg-cover bg-center bg-gray-100 min-h-screen bg-gradient-to-br from-blue-100 via-blue-90 to-blue-100 animate-gradient-x 6s ease infinite">
       <div 
   className="bg-blue-900 text-white inline-block rounded-lg animate-fade-in mb-[clamp(0.2rem,2.5vw,1.5rem)]"
   style={{
@@ -53,7 +52,7 @@ function Home() {
 </div>
 
 <div className='text-sm sm:text-base md:text-lg'>
-    <p className='font-normal sm:font-medium md:font-semibold'>Meet Aman Kr Chaurasiya aka <span className="text-orange-500">"Create Software Solutions"</span></p>
+    <p className='font-normal sm:font-medium md:font-semibold'>Meet Aman Kr Chaurasiya aka <span className="text-blue-900">"Create Software Solutions"</span></p>
 </div>
 
       <div className="mt-6">
@@ -65,7 +64,7 @@ function Home() {
         </Link>
       </div>
       <div className="mt-4 text-2xl">
-            Offer Price: <span className="line-through">₹499</span> <span className="text-orange-500 font-bold">₹21</span>
+            Offer Price: <span className="line-through">₹499</span> <span className="text-blue-900 font-bold">₹21</span>
           </div>
           <div>Limited Seats | Get ₹2,100 Worth Bonuses Free</div>
 

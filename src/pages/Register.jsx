@@ -1,8 +1,16 @@
 import React, { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import gsap from 'gsap';
+import { useLayout } from '../context/LayoutContext';
 
 const RegistrationPage = () => {
+  const { setShowFixedComponent } = useLayout();
+  
+    
+    useEffect(() => {
+      setShowFixedComponent(false);
+      return () => setShowFixedComponent(true);
+    }, [setShowFixedComponent]);
   const headingRef = useRef(null);
   const navigate = useNavigate();
 
@@ -24,10 +32,11 @@ const RegistrationPage = () => {
   };
 
   return (
+    
     <div className="relative min-h-screen bg-cover bg-center bg-no-repeat" 
          style={{ backgroundImage: 'url(/bg.jpeg)' }}>
       
-      <h1 ref={headingRef} className="text-xl md:text-2xl text-center font-black pt-10 px-2 py-1">
+      <h1 ref={headingRef} className="text-xl md:text-2xl text-blue-900 text-center font-black pt-10 px-2 py-1">
         YOU ARE JUST ONE STEP AWAY FROM REGISTRATION
       </h1>
 
@@ -149,7 +158,7 @@ const RegistrationPage = () => {
 
                 <button 
                   type="submit"
-                  className="w-full bg-black hover:bg-orange-600 text-white font-bold py-4 px-6 rounded-md transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center gap-2 cursor-pointer"
+                  className="w-full bg-black hover:bg-blue-900 text-white font-bold py-4 px-6 rounded-md transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center gap-2 cursor-pointer"
                 >
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 

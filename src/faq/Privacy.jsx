@@ -1,6 +1,16 @@
-import React from "react";
+import React, {  useEffect } from "react";
+import FixedComponent from "../components/FixedComponent";
+import { useLayout } from '../context/LayoutContext';
 
 const Privacy = () => {
+      const { setShowFixedComponent } = useLayout();
+    
+      
+      useEffect(() => {
+        setShowFixedComponent(false);
+        return () => setShowFixedComponent(true);
+      }, [setShowFixedComponent]);
+
   return (
     <div className="bg-white text-gray-800 px-6 md:px-24 py-12">
       <h1 className="text-4xl font-serif font-semibold mb-6">Privacy Policy</h1>

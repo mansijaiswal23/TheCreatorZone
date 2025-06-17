@@ -26,7 +26,7 @@ const KeyHighlights = () => {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-800 via-blue-600 to-blue-400 mb-6"
+className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 via-blue-600 to-blue-400 mb-6"
         >
            What You’ll Learn in 90 Minutes
         </motion.h2>
@@ -63,7 +63,7 @@ className="text-gray-700 text-lg font-medium max-w-2xl mx-auto"
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mt-14"
         >
-          <div className="inline-block bg-gradient-to-r from-blue-600 to-indigo-500 text-white px-8 py-3 rounded-full font-bold text-lg shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer">
+          <div className="inline-block bg-gradient-to-r from-blue-600 to-indigo-500 text-white px-8 py-3 rounded-2xl font-bold text-lg shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer">
             Reserve My Spot 🚀
           </div>
         </motion.div>

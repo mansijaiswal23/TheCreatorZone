@@ -39,7 +39,7 @@ const Testimonials = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-block relative">
-            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-800 bg-clip-text text-transparent mb-4 relative">
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-900 via-indigo-600 to-blue-900 bg-clip-text text-transparent mb-4 relative">
               Real stories, Real results ✨
             </h2>
             {/* Hand-drawn underline */}
@@ -95,11 +95,11 @@ const Testimonials = () => {
 
         {/* Call to Action */}
         <div className="text-center mt-16">
-          <div className="inline-block bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 cursor-pointer">
-            join the success stories! 🚀
+          <div className="inline-block bg-gradient-to-r from-blue-900 to-indigo-600 text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 cursor-pointer">
+            Join the success stories! 🚀
           </div>
           <p className="text-gray-600 mt-4 text-sm">
-            your journey to success starts here ✨
+            Your journey to success starts here ✨
           </p>
         </div>
       </div>
