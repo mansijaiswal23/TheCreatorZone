@@ -68,7 +68,7 @@ const AchievementsSection = () => {
     return(
           <div>
     <div className="bg-gradient-to-bl from-sky-50 via-blue-100 to-blue-200 min-h-screen p-6 text-center">
-      <h1 className="text-base sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bold mb-6 whitespace-nowrap text-center px-4 py-5">THIS FORMULA HAS CREATED NUMBER OF SUCCESS STORIES</h1>
+      <h1 className="text-base sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bold mb-6  text-center px-4 py-5">THIS FORMULA HAS CREATED NUMBER OF SUCCESS STORIES</h1>
 
     <div className='relative'>
       <div className={`max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 transition duration-300 ease-in-out ${selectedImage ? ' brightness-50' : ''}`}>

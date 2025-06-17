@@ -22,6 +22,7 @@ function App() {
   return (
     <LayoutProvider>
       <Router>
+        <div className="overflow-x-hidden"></div>
         <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
@@ -36,6 +37,7 @@ function App() {
 
       </Routes>
               <FixedComponent />
+              
     </Router>
               </LayoutProvider>
 
