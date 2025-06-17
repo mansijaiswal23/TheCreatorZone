@@ -7,6 +7,7 @@ import PaymentPage from "./pages/PaymentPage";
 import FixedComponent from './components/FixedComponent';
 
 import Terms from './faq/Terms';
+import Privacy from './faq/Privacy';
 // _app.js or main entry file
 import '@fontsource/eb-garamond/400.css';
 import '@fontsource/eb-garamond/700.css';
@@ -23,6 +24,7 @@ function App() {
 
         {/* <Route path="/payment" element={<Payment />} /> */}
           <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy" element={<Privacy />} />
 
       </Routes>
               <FixedComponent />

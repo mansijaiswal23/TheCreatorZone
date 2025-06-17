@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import FAQSection from './FAQSection'; // Importing FAQSection component
+//import FAQSection from './FAQSection'; // Importing FAQSection component
+import Testimonials from '../components/Testimonials';
 
 const Page3 = () => {
   return (
@@ -45,7 +46,7 @@ const Page3 = () => {
       </div>
       <div className="mt-6 relative z-10 text-center">
         <Link to="/register">
-          <button className="bg-orange-500 text-white text-3xl px-6 py-3 rounded-2xl font-bold text-md cursor-pointer transition" 
+          <button className="bg-blue-900 text-white text-3xl px-6 py-3 rounded-2xl font-bold text-md cursor-pointer transition" 
           >I WANT TO REGISTER NOW
           </button>
         </Link>
@@ -53,7 +54,7 @@ const Page3 = () => {
       <div className="mt-4 text-2xl mb-4">
             Offer Price: <span className="line-through">₹499</span> <span className="text-orange-500 font-bold">₹21</span>
           </div>
-      <FAQSection />
+          <Testimonials />
     </div>
   );
 };

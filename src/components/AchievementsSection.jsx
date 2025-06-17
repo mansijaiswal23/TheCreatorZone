@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 //import FAQSection from './FAQSection'; // Importing FAQSection component
-import Page3 from './Page3';
+// import Page3 from './Page3';
+import KeyHighlights from './KeyHighlights';
 
 const imageData = [
   {
@@ -65,8 +66,8 @@ const AchievementsSection = () => {
 
 
     return(
-
-    <div className="bg-blue-50 min-h-screen p-6 text-center">
+          <div>
+    <div className="bg-gradient-to-bl from-sky-50 via-blue-100 to-blue-200 min-h-screen p-6 text-center">
       <h1 className="text-base sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-bold mb-6 whitespace-nowrap text-center px-4 py-5">THIS FORMULA HAS CREATED NUMBER OF SUCCESS STORIES</h1>
 
     <div className='relative'>
@@ -96,7 +97,7 @@ const AchievementsSection = () => {
 </motion.p>
       <div className="mt-6">
         <Link to="/register">
-          <button className="bg-orange-500 text-white text-3xl px-6 py-3 rounded-2xl font-bold text-md cursor-pointer">
+          <button className="bg-blue-900 text-white text-3xl px-6 py-3 rounded-2xl font-bold text-md cursor-pointer">
             I WANT TO REGISTER NOW
           </button>
         </Link>
@@ -152,7 +153,9 @@ const AchievementsSection = () => {
       )}
       
     </div>
-    <Page3 />
+    {/* <Page3 /> */}
+    </div>
+    <KeyHighlights/>
     </div>
 
     

@@ -5,10 +5,11 @@ import AchievementsSection from './AchievementsSection';
 function Home() {
 
   return (
+    <div>
     <div className="text-center bg-cover bg-center bg-gray-100 min-h-screen"
     style={{backgroundImage: "url('/cru.jpg')"}}>
       <div 
-  className="bg-orange-600 text-white inline-block rounded-lg animate-fade-in mb-[clamp(0.2rem,2.5vw,1.5rem)]"
+  className="bg-blue-900 text-white inline-block rounded-lg animate-fade-in mb-[clamp(0.2rem,2.5vw,1.5rem)]"
   style={{
     padding: 'clamp(0.25rem, 1.5vw, 0.5rem) clamp(1rem, 2vw, 2rem)',
     fontSize: 'clamp(0.55rem, 1.8vw, 1rem)'
@@ -19,12 +20,13 @@ function Home() {
        <div className="text-center px-3 sm:px-4">
   {/* Main Heading - Single line enforced via size reduction */}
   <h1 className="text-[clamp(0.65rem,3vw,2.5rem)] font-bold  animate-fade-in leading-tight tracking-tight whitespace-nowrap">
-    CRACK YOUR <span className="text-orange-500">NEXT VIRAL VIDEO</span> BY MASTERING CONTENT
+     Learn How to Make <span className="text-blue-900"> ₹30,000/Month</span>  Part-Time Through Blogging!
   </h1>
   
   {/* Subheading */}
-  <h2 className="text-[clamp(0.55rem,2.8vw,2.25rem)] font-bold  animate-fade-in">
-    STRATEGY & <span className="text-orange-500">BUILD YOUR SOCIAL BRAND</span>
+  <h2 className="text-[clamp(0.55rem,2.8vw,2.25rem)] font-semibold  animate-fade-in">
+    Attend This Live Blogging Webinar & <span className="text-blue-900"> Discover the Exact Blueprint to Build a Profitable Blog — Even if You're Just Starting Out.
+</span>
   </h2>
   
   {/* Paragraphs */}
@@ -56,7 +58,7 @@ function Home() {
 
       <div className="mt-6">
         <Link to="/register">
-          <button className="bg-orange-500 text-white text-3xl px-6 py-3 rounded-2xl font-bold text-md cursor-pointer" 
+          <button className="bg-blue-900 text-white text-3xl px-6 py-3 rounded-2xl font-bold text-md cursor-pointer" 
           >
             I WANT TO REGISTER NOW
           </button>
@@ -65,8 +67,10 @@ function Home() {
       <div className="mt-4 text-2xl">
             Offer Price: <span className="line-through">₹499</span> <span className="text-orange-500 font-bold">₹21</span>
           </div>
-          <AchievementsSection/>
+          <div>Limited Seats | Get ₹2,100 Worth Bonuses Free</div>
 
+    </div>
+          <AchievementsSection/>
     </div>
   );
 }
